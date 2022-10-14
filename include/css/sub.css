@@ -1,0 +1,1151 @@
+/* tit */
+.tit{
+	font-size: 34px;
+	font-weight: 600;
+	color: #333;
+	position: relative;
+	line-height: 1.3;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.tit::before{
+	content: 'KOREA PUBLISHERS COOPERATIVE';
+	display: block;
+	color: var(--mainCol);
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+/* conTxt */
+.conTxt{
+	font-weight: 400;
+	font-size: 17px;
+	word-break: keep-all;
+	line-height: 1.6;
+}
+
+.conTxt strong{
+	font-weight: 600;
+}
+
+/* .subVisual */
+.subVisual{
+	width: 90%;
+	max-width: 1691px;
+	margin: auto;
+	position: relative;
+	margin-bottom: 200px;
+	padding: 0 !important;
+}
+
+.subVisual::before,
+.subVisual::after{
+	content: '';
+	width: 2px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+
+.subVisual::before{
+	background: #fff;
+	transform: translate(-50%,0%);
+	z-index: 1;
+}
+
+.subVisual::after{
+	background: var(--mainCol);
+	transform: translate(-50%,100%);
+}
+
+.subVisual .bg{
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.subVisual .bg img{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.subVisual .txtBox{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	width: 80%;
+	max-width: 1200px;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+}
+
+.subVisual .txtBox h2{
+	margin-bottom: 20px;
+}
+
+.subVisual .txtBox h2 span{
+	font-size: 14px;
+	color: #b6ddff;
+	display: block;
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.subVisual .txtBox h2 strong{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.subVisual .txtBox p{
+	font-size: 30px;
+	color: #fff;
+	line-height: 1.5;
+}
+
+/* section */
+#content section{
+	padding: 100px 0;
+}
+
+/* boardSec */
+.boardSec{
+	padding-top: 0 !important;
+}
+
+.boardSec .top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.boardSec .top .searchBox{
+	display: flex;
+	align-items: center;
+}
+
+.boardSec .top .searchBox select{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-right: 5px;
+}
+
+.boardSec .top .searchBox div{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 30px;
+	padding-left: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	overflow: hidden;
+}
+
+.boardSec .top .searchBox div span{
+	display: block;
+	font-size: 14px;
+	width: 0px;
+	display: none;
+}
+
+.boardSec .top .searchBox div input{
+	width: calc(100% - 0px);
+	height: 28px;
+	outline: none;
+	border: 0;
+}
+
+.boardSec .top .searchBtn{
+	display: block;
+	width: 40px;
+	height: 30px;
+	background: var(--mainCol);
+	position: relative;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+.boardSec .top .searchBtn img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+}
+
+.boardSec .top .showHow{
+	display: flex;
+	align-items: center;
+}
+
+.boardSec .top .showHow li{
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.boardSec .top .showHow li .icon{
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	margin-right: 5px;
+}
+
+.boardSec .top .showHow li .icon span{
+	display: block;
+	background: #999;
+	position: absolute;
+}
+
+.boardSec .top .showHow li.on .icon span{
+	background: var(--mainCol);
+}
+
+.boardSec .top .showHow li.showThumb .icon span{
+	width: 45%;
+	height: 45%;
+}
+
+.boardSec .top .showHow li.showThumb .icon span:nth-child(1){
+	top: 0;
+	left: 0;
+}
+
+.boardSec .top .showHow li.showThumb .icon span:nth-child(2){
+	top: 0;
+	right: 0;
+}
+
+.boardSec .top .showHow li.showThumb .icon span:nth-child(3){
+	bottom: 0;
+	left: 0;
+}
+
+.boardSec .top .showHow li.showThumb .icon span:nth-child(4){
+	bottom: 0;
+	right: 0;
+}
+
+.boardSec .top .showHow li.showList .icon span{
+	width: 100%;
+	height: 4px;
+	left: 0;
+}
+
+.boardSec .top .showHow li.showList .icon span:nth-child(1){
+	top: 0;
+}
+
+.boardSec .top .showHow li.showList .icon span:nth-child(2){
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.boardSec .top .showHow li.showList .icon span:nth-child(3){
+	bottom: 0;
+}
+
+.boardSec .top .showHow li p{
+	font-size: 13px;
+	color: #999;
+}
+
+.boardSec .top .showHow li.on p{
+	color: #333;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.boardSec .listBox{
+	margin-top: 20px;
+	border-top: 2px solid #333;
+}
+
+.boardSec .listBox table{
+	width: 100%;
+}
+
+.boardSec .listBox th{
+	height: 50px;
+	line-height: 50px;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.boardSec .listBox tbody tr{
+	height: 40px;
+	line-height: 40px;
+	background: #f7f8fa;
+}
+
+.boardSec .listBox tbody td{
+	padding-left: 5px;
+	border-bottom: 5px solid #fff;
+}
+
+.boardSec .listBox tbody td input{
+	display: block;
+	margin: auto;
+}
+
+.boardSec .listBox .tableTit{
+	width: 70%;
+	padding-right: 20px;
+}
+
+.boardSec .listBox .tableTit a{
+	display: block;
+	/* white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; */
+}
+
+.news .boardSec .listBox .tableTit{
+	padding-right: 10px;
+}
+
+.news .boardSec .listBox .tableTit a{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	width: 50vw;
+}
+
+.boardSec .listBox .chkBox{
+	width: 100px;
+	text-align: center;
+}
+
+.boardSec .listBox ul.boardUl{	
+	padding-top: 30px;
+}
+
+.boardSec .listBox ul.boardUl{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.boardSec .listBox ul.boardUl *{
+	/* transition: all 1s; */
+}
+
+.boardSec .listBox.doThumb ul li{
+	width: 30%;
+	margin-top: 30px;
+}
+
+.boardSec .listBox.doThumb ul li:nth-child(-n+3){
+	margin-top: 0;
+}
+
+.boardSec .listBox.doThumb ul li .imgBox{
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+.boardSec .listBox ul.boardUl li .imgBox{
+	overflow: hidden;
+}
+
+.boardSec .listBox ul.boardUl li .imgBox img{
+	transition: all 0.3s;
+}
+
+.boardSec .listBox ul.boardUl li:hover .imgBox img{
+	transform: scale(1.1);
+}
+
+.boardSec .listBox ul.boardUl li .txtBox{
+	width: 100%;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox h5{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+}
+
+.boardSec .listBox.doThumb ul li .txtBox h5{
+	margin: 10px 0 10px;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p{
+	display: flex;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p span{
+	color: #999;
+	font-size: 14px;
+	margin-right: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p span:last-child{
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p span::before{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 10px;
+	background: #999;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0,-50%);
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p span:last-child::before{
+	display: none;
+}
+
+.boardSec .listBox.doList ul{
+	padding-top: 15px;
+}
+
+.boardSec .listBox.doList ul li{
+	width: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.history_list .boardSec .listBox.doList ul li{
+	width: 49%;
+	margin-bottom: 15px !important;
+}
+
+.boardSec .listBox.doList ul li:last-child{
+	margin-bottom: 0;
+}
+
+.boardSec .listBox ul.boardUl li a{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+}
+
+.boardSec .listBox ul.boardUl li a .chkBox{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: auto;
+	z-index: 1;
+}
+
+.boardSec .listBox.doList ul li a .imgBox{
+	width: 200px;
+}
+
+.history_list .boardSec .listBox.doList ul li a .imgBox{
+	width: 100px;
+}
+
+.boardSec .listBox.doList ul li a .txtBox{
+	width: calc(100% - 200px);
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.history_list .boardSec .listBox.doList ul li a .txtBox{
+	width: calc(100% - 100px);
+}
+
+.boardSec .listBox.doList .txtBox h5{
+	margin-bottom: 10px;
+}
+
+.boardSec .pageBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.boardSec .pageBtn .prevBtn,
+.boardSec .pageBtn .nextBtn{
+	width: 26px;
+	display: block;	
+}
+
+.boardSec .pageBtn ul{
+	display: flex;
+	align-items: center;
+}
+
+.boardSec .pageBtn ul li{
+	margin: 0 8px;
+}
+
+.boardSec .pageBtn ul li a{
+	color: #999;
+	transition: all 0.3s;
+}
+
+.boardSec .pageBtn ul li:hover a,
+.boardSec .pageBtn ul li.on a{
+	color: var(--mainCol);
+	font-weight: 600;
+}
+
+.ctrlBox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.ctrlBox a{
+	font-size: 14px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background: #ccc;
+	text-align: center;
+	margin: 0 10px;
+	border-radius: 5px;
+}
+
+.ctrlBox a.allChk{
+	background: #333;
+	color: #fff;
+}
+
+.ctrlBox a.del{
+	background: #c93939;
+	color: #fff;
+}
+
+.ctrlBox a.new{
+	background: var(--mainCol);
+	color: #fff;
+}
+
+.ctrlBox a.fix{
+	background: #69bb91;
+	color: #fff;
+}
+
+/* bbsForm */
+.bbsForm .inner{
+	max-width: 700px;
+}
+
+.bbsForm form{
+	display: block;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.bbsForm ul li{
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.bbsForm ul li h5{
+	width: 100px;
+	text-align: left;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	position: relative;
+}
+
+.bbsForm ul li h5::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 3px;
+	height: 10px;
+	transform: translate(0,-50%);
+	background: var(--mainCol);
+}
+
+.bbsForm ul li .inputBox{
+	width: calc(100% - 100px);
+}
+
+.bbsForm ul li .inputBox input[type='text'],
+.bbsForm ul li .inputBox input[type='date']{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.bbsForm .btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bbsForm .btn a{
+	width: 48%;
+	text-align: center;
+	background: var(--mainCol);
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+
+.bbsForm .btn a.cancel{
+	background: #444;
+}
+
+/* bbsForm2 */
+.bbsForm2 ul li{
+	margin-bottom: 15px;
+}
+
+.bbsForm2 ul li input[type='text']{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+.bbsForm2 ul li textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 300px;
+	line-height: 1.4;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.bbsForm2 ul li.fileBox{
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+
+.bbsForm2 ul li.fileBox h5{
+	margin-right: 20px;
+}
+
+.bbsForm2 ul li.fileBox input{
+	width: 100%;
+	border: 0;
+}
+
+.bbsForm2 .btn{
+	display: flex;
+	justify-content: center;
+}
+
+.bbsForm2 .btn a{
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #ccc;
+	margin: 0 10px;
+	border-radius: 5px;
+}
+
+.bbsForm2 .btn a.ok{
+	background: var(--mainCol);
+	color: #fff;
+}
+
+/* bbsView */
+.bbsView{
+	
+}
+
+.bbsView .title{
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.bbsView .title h2{
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.bbsView .title .titInfo{
+	display: flex;
+	align-items: center;
+}
+
+.bbsView .title .titInfo p{
+	font-size: 13px;
+	margin-right: 15px;
+	color: #999;
+}
+
+.bbsView .title .bbsBtn{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+	display: flex;
+	align-items: center;
+}
+
+.bbsView .title .bbsBtn li{
+	margin-left: 10px;
+}
+
+.bbsView .title .bbsBtn li a{
+	display: block;
+	padding: 10px 20px;
+	background: #ccc;
+	font-size: 14px;
+}
+
+.bbsView .title .bbsBtn li.list a{
+	background: var(--mainCol);
+	color: #fff;
+}
+
+.bbsView .title .bbsBtn li.fix a{
+	background: #555;
+	color: #fff;
+}
+
+.bbsView .conBox{
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 50px;
+}
+
+.bbsView .downBox{
+	margin-bottom: 30px;
+}
+
+.bbsView .downBox ul li{
+	margin-bottom: 10px;
+}
+
+.bbsView .downBox ul li a{
+	display: block;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+.bbsView .downBox ul li a:hover{
+	border: 1px solid var(--mainCol);
+}
+
+.bbsView .downBox ul li:last-child{
+	margin-bottom: 0;
+}
+
+.bbsView .downBox ul li a img{
+	width: 15px;
+	margin-right: 15px;
+}
+
+.bbsView .downBox ul li a h5{
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 5px;
+	color: #555;
+}
+
+.bbsView .downBox ul li a span{
+	font-size: 12px;
+	color: #999;
+}
+
+.bbsView .pageBox ul li a{
+	display: block;
+	width: 100%;
+	padding: 40px 20px;
+	border: 1px solid #ccc;
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+
+.bbsView .pageBox ul li a:hover{
+	background: #f5f5f5;
+}
+
+.bbsView .pageBox ul li:last-child a{
+	border-top: 0;
+}
+
+.bbsView .pageBox ul li a span{
+	display: block;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.bbsView .pageBox ul li a strong{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+/* callBtn */
+.callBtn{
+	width: 300px;
+	margin: 30px auto 0;
+	display: block;
+}
+
+.callBtn li{
+	background: var(--mainCol);
+	border-radius: 100px;
+	padding: 10px;
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.callBtn li:last-child{
+	margin-bottom: 0;
+}
+
+.callBtn li h5{
+	background: #fff;
+	border-radius: 100px;
+	padding: 10px 0px;
+	text-align: center;
+	width: 100px;
+	color: var(--mainCol);
+	font-size: 17px;
+	line-height: 1;
+}
+
+.callBtn li span{
+	width: calc(100% - 110px);
+	display: block;
+	color: #fff;
+	font-size: 17px;
+	white-space: nowrap;
+	margin-left: 10px;
+}
+
+.callBtn li span a{
+	color: #fff;
+}
+
+
+
+/* ------------------------------------repon */
+@media screen and (max-width: 1000px){
+
+/* subVisual */
+.subVisual{
+	width: 100%;
+	margin-bottom: 20vw;
+}
+
+.subVisual .bg{
+	height: auto;
+}
+
+.subVisual .bg img{
+	position: static;
+	width: 100%;
+	height: auto;
+	transform: none;
+}
+
+.subVisual .txtBox h2{
+	font-size: 4vw;
+}
+
+.subVisual .txtBox h2 strong{
+	font-size: 1em;
+}
+
+.subVisual .txtBox h2 span{
+	font-size: 0.4em;
+	margin-bottom: 2vw;
+}
+
+.subVisual .txtBox p{
+	font-size: 5.5vw;
+}
+
+.subVisual::before, .subVisual::after{
+	height: 10vw;
+	width: 1px;
+}
+
+/* contents */
+#content section{
+	padding: 15vw 0;
+}
+
+/* tit */
+.tit{
+	font-size: 5.5vw;
+	margin-bottom: 5vw;
+}
+
+.tit::before{
+	font-size: 0.4em;
+	margin-bottom: 2vw;
+}
+
+/* conTxt */
+.conTxt{
+	font-size: 3.5vw;
+}
+
+/* callBtn */
+.callBtn{
+	width: 70%;
+	margin: 5vw auto 0;
+}
+
+.callBtn li{
+	padding: 2vw;
+}
+
+.callBtn li h5{
+	padding: 1vw 0;
+	width: 40%;
+	font-size: 3.5vw;
+}
+
+.callBtn li span{
+	width: 57%;
+	font-size: 3.5vw;
+	margin-left: 0;
+}
+
+/* boardSec */
+.boardSec .top .searchBox select{
+	width: 50px;
+	font-size: 3vw;
+	height: 6vw;
+	line-height: 6vw;
+}
+
+.boardSec .top .searchBox div{
+	height: 6vw;
+}
+
+.boardSec .top .searchBox div input{
+	height: 6vw;
+	font-size: 3vw;
+}
+
+.boardSec .top .searchBtn{
+	width: 10vw;
+	height: 6vw;
+}
+
+.boardSec .top .searchBtn img{
+	width: 3vw;
+}
+
+.boardSec .top span{
+	font-size: 3vw;
+}
+
+.boardSec .listBox{
+	margin-top: 3vw;
+}
+
+.boardSec .listBox .chkBox{
+	width: 5vw;
+}
+
+.boardSec .listBox .chkBox input{
+	width: 3vw;
+}
+
+.boardSec .listBox th{
+	font-size: 3.5vw;
+	height: 15vw;
+	line-height: 15vw;
+	font-weight: 600;
+}
+
+.boardSec .listBox tbody td{
+	font-size: 3.5vw;
+}
+
+.boardSec .pageBtn{
+	margin-top: 5vw;
+}
+
+.boardSec .pageBtn .prevBtn, .boardSec .pageBtn .nextBtn{
+	width: 5vw;
+}
+
+.boardSec .pageBtn .prevBtn img, 
+.boardSec .pageBtn .nextBtn img{
+	width: 100%;
+}
+
+.boardSec .pageBtn ul li{
+	font-size: 3.5vw;
+	margin: 0 2vw;
+}
+
+.boardSec .listBox.doThumb ul{
+	justify-content: center;
+}
+
+.boardSec .listBox.doThumb ul li{
+	width: 90%;
+	margin-top: 5vw !important;
+}
+
+.boardSec .listBox.doThumb ul li:nth-child(1){
+	margin-top: 0 !important;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox h5{
+	font-size: 4vw;
+}
+
+.boardSec .listBox ul.boardUl li .txtBox p span{
+	font-size: 3vw;
+}
+
+.boardSec .listBox.doList ul li a{
+	justify-content: space-between;
+}
+
+.boardSec .listBox.doList ul li a .imgBox{
+	width: 30%;
+}
+
+.boardSec .listBox.doList ul li a .txtBox{
+	width: 65%;
+	padding-left: 0;
+}
+
+.boardSec .listBox ul.boardUl li a .chkBox{
+	top: 5px;
+	left: 5px;
+}
+
+/* ctrlBox */
+.ctrlBox{
+	margin-top: 5vw;
+	justify-content: space-between;
+}
+
+.ctrlBox a{
+	width: 31%;
+	margin: 0;
+}
+
+/* bbsView */
+.bbsView .title h2{
+	font-size: 5vw;
+	margin-bottom: 3vw;
+}
+
+.bbsView .title .titInfo p{
+	font-size: 3vw;
+}
+
+.bbsView .title .bbsBtn{
+	position: static;
+	transform: translate(0,0);
+	margin-top: 5vw;
+}
+
+.bbsView .title .bbsBtn li:nth-child(1){
+	margin-left: 0;
+}
+
+.bbsView .conBox{
+	font-size: 3.5vw;
+}
+
+.bbsView .conBox img{
+	max-width: 100%;
+}
+
+.bbsView .downBox{
+	margin-bottom: 5vw;
+}
+
+.bbsView .pageBox ul li a{
+	padding: 10vw 20px;
+}
+
+.bbsView .downBox ul li a img{
+	width: 4vw;
+	max-width: 15px;
+	margin-right: 2vw;
+}
+
+.bbsView .downBox ul li a h5{
+	font-size: 3.5vw;
+}
+
+.bbsView .downBox ul li a span{
+	font-size: 3.5vw;
+}
+
+.bbsView .pageBox ul li a span{
+	font-size: 3.5vw;
+	margin-bottom: 3vw;
+}
+
+.bbsView .pageBox ul li a strong{
+	line-height: 1.5;
+	font-size: 3.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

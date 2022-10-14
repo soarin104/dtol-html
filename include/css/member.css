@@ -1,0 +1,159 @@
+/* 조합원혜택 */
+.member1 .subVisual{
+	margin-bottom: 100px;
+}
+
+.benefit article{
+	padding: 40px 15%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.benefit article .conTxt{
+	padding-left: 50px;
+	position: relative;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.benefit article .conTxt:last-child{
+	margin-bottom: 0;
+}
+
+.benefit article .conTxt::before{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: var(--mainCol);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+}
+
+/* 가입안내 */
+.howJoin{
+	background: #f5f5f5;
+}
+
+.howJoin .listUl li{
+	background: #fff;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 20px 15px;
+	border: 1px solid #ccc;
+}
+
+.howJoin .listUl li h5{
+	width: 180px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	background: var(--mainCol);
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.howJoin .listUl li > p{
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+}
+
+.howJoin .listUl li .list{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.howJoin .listUl li .list p{
+	text-align: center;
+	border: 1px solid #ccc;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	padding: 0 10px;
+	margin: 0 10px;
+}
+
+
+
+/* -------------------------------respon */
+@media screen and (max-width: 1000px){
+
+.member1 .subVisual{
+	margin-bottom: 20vw !important;
+}
+
+/* benefit */
+.benefit{
+	padding-top: 0 !important;
+}
+
+.benefit article{
+	padding: 5vw 0;
+}
+
+.benefit article .conTxt{
+	font-size: 3.5vw;
+	padding-left: 8vw;
+	margin-bottom: 1vw;
+}
+
+.benefit article .conTxt::before{
+	width: 5vw;
+	top: 2.3vw;
+	height: 2px;
+	transform: translate(0)
+}
+
+/* howJoin */
+.howJoin .listUl li{
+	margin-bottom: 5vw;
+	padding: 3vw 5vw;
+}
+
+.howJoin .listUl li h5{
+	width: 50%;
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 3.5vw;
+	margin-bottom: 3vw;
+}
+
+.howJoin .listUl li > p{
+	height: auto;
+	line-height: 1.5;
+}
+
+.howJoin .listUl li .list{
+	flex-wrap: wrap;
+}
+
+.howJoin .listUl li .list p{
+	height: auto;
+	line-height: 1.5;
+	font-size: 3vw;
+	margin-bottom: 1vw;
+}
+
+/* 조합원 명단 */
+.boardSec.memberList .listBox{
+	overflow-x: auto;
+	width: 100%;
+}
+
+.boardSec.memberList .listBox table{
+	min-width: 1000px;
+}
+
+
+
+
+}

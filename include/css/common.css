@@ -1,0 +1,583 @@
+/* font */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* common */
+*{
+	--mainCol: #134e82;
+	font-family: 'NanumSquareRound';
+	word-break: keep-all;
+}
+
+.inner{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.imgBox img{
+	width: 100%;
+}
+
+.mb{
+	display: none !important;
+}
+
+body{
+	font-family: 'NanumSquareRound';
+}
+
+
+/* header */
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: all 0.4s;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.header.on{
+	/* background: #fffdf7; */
+	box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+}
+
+.header .inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.header .logo{
+	width: 177px;
+}
+
+.header .logo img{
+	width: 100%;
+}
+
+.header .nav{
+	width: calc(100% - 330px);
+	max-width: 1000px;
+	position: relative;
+	top: 0px;
+	transition: all 0.4s;
+}
+
+.header.on .nav{
+	top: 0;
+}
+
+.header .nav .navUl{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .nav .navUl .navLi{
+	font-family: 'cafe24';
+	font-weight: 600;
+	position: relative;
+	width: 50%;
+	text-align: center;
+}
+
+.header .nav .navUl .navLi::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 15px;
+	background: url(../img/menuHover.png) no-repeat center / contain;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%,0px);
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.header .nav .navUl .navLi.on::after,
+.header .nav .navUl .navLi:hover::after{
+	opacity: 1;
+	transform: translate(-50%,-8px);
+}
+
+.header .nav .navUl .navLi > a{
+	transition: all 0.2s;
+	display: block;
+	line-height: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.header .nav .navUl .navLi.on > a,
+.header .nav .navUl .navLi:hover > a{
+	font-weight: 400;
+	color: var(--mainCol);
+}
+
+.header .nav .navUl .navLi.on > a::after,
+.header .nav .navUl .navLi > a::after{
+	content: '';
+	display: block;
+	width: 0%;
+	height: 4px;
+	background: var(--mainCol);
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%,0);
+	transition: all 0.3s;
+}
+
+.header .nav .navUl .navLi:hover > a::after{
+	opacity: 1;
+	width: 100%;
+}
+
+.header .nav .navUl ul{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+	padding: 0px 0px;
+	box-sizing: border-box;
+	display: none;
+}
+
+.header .nav .navUl ul li a{
+	line-height: 1.9;
+	display: block;
+	color: #333;
+	white-space: nowrap;
+	font-size: 13px;
+	text-align: left;
+	font-weight: 600;
+	padding: 10px 10px;
+	border-bottom: 1px solid #eee;
+	transition: all 0.3s;
+}
+
+.header .nav .navUl ul li a:hover{
+	background: rgba(255,255,255,0.6);
+	color: var(--mainCol);
+}
+
+/* scrollBar */
+.scrollBar{
+	position: fixed;
+	left: 3%;
+	top: 50%;
+	transform: translate(0,-50%);
+	z-index: 10;
+	width: 39px;
+	padding: 0px 0 0px;
+	display: none;
+}
+
+.scrollBar .bar{
+	width: 1px;
+	height: 300px;
+	background: var(--mainCol);
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+.scrollBar .bar::before,
+.scrollBar .bar::after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: var(--mainCol);
+}
+
+.scrollBar .bar::before{
+	top: 0;
+	
+}
+
+.scrollBar .bar::after{
+	bottom: 0;
+	transform: translate(-50%,100%);
+}
+
+.scrollBar .point{
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	display: block;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.scrollBar .point img{
+	width: 100%;
+}
+
+#fp-nav{
+	display: none;
+}
+
+/* content */
+#content{
+	padding-top: 100px;
+}
+
+/* footer */
+.footer{
+	height: auto !important;
+	padding: 50px 0 25px !important;
+}
+
+.footer .nav{
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+
+.footer .nav .navUl{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .nav .navUl .navLi{
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.footer .nav .navUl .navLi > a{
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.footer .nav .navUl .navLi ul li{
+	margin-top: 15px;
+}
+
+.footer .nav .navUl .navLi ul li a{
+	color: #aaa;
+}
+
+.footer .fnb{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .fnb li{
+	font-size: 13px;
+	padding: 0 10px;
+	position: relative;
+}
+
+.footer .fnb li::after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 70%;
+	background: #ccc;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.footer .fnb li:last-child::after{
+	display: none;
+}
+
+.footer .fTxt{
+	padding-top: 25px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.9;
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+/* common */
+.pc{
+	display: none !important;
+}
+
+.mb{
+	display: block !important;
+}
+
+#content{
+	padding-top: 60px;
+}
+
+/* header */
+.header{
+	height: 60px;
+	background: #fff !important;
+	z-index: 40;
+}
+
+.header .inner{
+	display: block;
+	height: 60px;
+}
+
+.header .logo{
+	display: block;
+	width: auto;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.header .logo img{
+	width: auto;
+	height: 100%;
+}
+
+.header .nav{
+	display: none;
+}
+
+.allMenuBtn{
+	cursor: pointer;
+	width: 25px;
+	height: 20px;
+	position: absolute;
+	right: 0%;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.allMenuBtn span{
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: var(--mainCol);
+	position: absolute;
+}
+
+.allMenuBtn span:nth-child(1){
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.allMenuBtn span:nth-child(2){
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.allMenuBtn span:nth-child(3){
+	top: auto;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+/* allMenu */
+.allMenu{
+	position: fixed;
+	top:59px !important;
+	left: 100%;
+	width: 100%;
+	height: calc(100% - 59px);
+	background: #fff;
+	z-index: 50;
+	display: block;
+	transition: 0.3s;
+}
+
+.allMenu.on{
+	left: 0;
+}
+
+.allMenu .navUl{
+	display: block;
+	width: 85%;
+	margin: 10px auto;
+}
+
+.allMenu .navUl .navLi{
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+.allMenu .navUl .navLi > a{
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+.allMenu .navUl .navLi > a::after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/menuDown.png) no-repeat center / contain;
+}
+
+.allMenu .navUl .navLi[data-cate='work'] > a::after,
+.allMenu .navUl .navLi[data-cate='file'] > a::after,
+.allMenu .navUl .navLi[data-cate='info'] > a::after{
+	display: none;
+}
+
+.allMenu .navUl .navLi ul{
+	padding: 15px 15px 0;
+	display: none;
+	
+}
+
+.allMenu .navUl .navLi li a{
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.allMenu .navUl .navLi li:last-child a{
+	margin-bottom: 0;
+}
+
+/* nav */
+.header .nav{
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+
+/* footer */
+.footer{
+	padding: 0vw 0 10vw !important;
+}
+
+.footer .fSns{
+	position: static;
+	width: 70%;
+	margin: 5vw auto 0;
+}
+
+.footer .fTxt{
+	font-size: 10px;
+}
+
+.footer .nav{
+	border-top: 0;
+}
+
+.footer .nav .navUl{
+	padding: 10vw 0 0vw;
+	flex-wrap: wrap;
+}
+
+.footer .nav .navUl .navLi{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	position: relative;
+}
+
+.footer .nav .navUl .navLi > a{
+	font-size: 3.5vw;
+	font-weight: 400;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+.footer .nav .navUl .navLi > a::after{
+	content: '';
+	display: block;
+	width: 3vw;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+	background: url(../img/menuDown.png) no-repeat center / contain;
+}
+
+.footer .nav .navUl .navLi[data-cate="work"] > a::after,
+.footer .nav .navUl .navLi[data-cate="file"] > a::after,
+.footer .nav .navUl .navLi[data-cate="info"] > a::after{
+	display: none;
+}
+
+.footer .nav .navUl .navLi ul{
+	margin-top: 5vw;
+	display: none;
+}
+
+.footer .nav .navUl .navLi ul li{
+	margin-top: 3vw;
+	box-sizing: border-box;
+	/* padding-left: 3vw; */
+}
+
+.footer .nav .navUl .navLi ul li:first-child{
+	margin-top: 0;
+}
+
+.footer .nav .navUl .navLi ul li a{
+	font-size: 3.5vw;
+}
+
+.footer .fnb{
+	width: 90%;
+	margin: auto;
+	padding: 5vw 0;
+}
+
+.footer .fnb li{
+	font-size: 3.5vw;
+}
+
+
+
+
+}
