@@ -6,6 +6,10 @@
 	<meta name="format-detection" content="telephone=no" />
 	<title>한국출판협동조합</title>
 
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./include/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./include/img/favicon.ico" type="image/x-icon">
+
 	<!-- reset/jQuery -->
 	<link rel="stylesheet" href="./include/css/reset.css">
 	<script src="./include/js/jquery-1.12.4.min.js"></script>
@@ -35,8 +39,6 @@
 	<script src="./include/js/common.js"></script>
 	<? if($page == "index"){ ?>
 	<script src="./include/js/main.js"></script>
-	<? }else if($page == "disappear" || $page == "withcat" || $page == "help"){ ?>
-	<script src="./include/js/normal.js"></script>
 	<? }else{ ?>
 	<script src="./include/js/sub.js"></script>
 	<? } ?>
@@ -67,7 +69,7 @@
 		<!-- scrollBar -->
 		<aside class="scrollBar pc">
 			<span class="point">
-				<img src="./include/img/scrollPoint.png" alt="">
+				<!-- <img src="./include/img/scrollPoint.png" alt=""> -->
 			</span>
 			<span class="bar"></span>
 		</aside>
