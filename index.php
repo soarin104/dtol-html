@@ -1,6 +1,9 @@
 <? 
 	$page = "index";
-	include './include/header.php' 
+	include './include/header.php';
+
+	//팝업 설정
+	include './include/popup.php';
 ?>
 
 <section class="visual">
@@ -115,7 +118,7 @@
 	</article>
 </section>
 
-<section class="info">
+<section class="info" style="display: none !important">
 	<div class="inner">
 		<article class="txtBox">
 			<h2 class="tit">
@@ -143,6 +146,56 @@
 			</span>
 		</div>
 	</div> -->
+</section>
+
+<section class="gotoBanner">
+	<div class="inner">
+		<article class="modoo">
+			<a href="#">
+				<div class="imgBox">
+					<img src="./include/img/modooLogo.png" alt="">
+				</div>
+				<div class="txtBox">
+					<h5>책광장모두</h5>
+					<p>
+						책을 만들고, 책을 권하고, 책을 읽는 모두의 공간
+					</p>
+				</div>
+				<span class="more">
+					<span>바로가기</span>
+					<img src="./include/img/more.png" alt="">
+				</span>
+			</a>
+		</article>
+		<article class="place1">
+			<a href="#">
+				<div class="txtBox">
+					<h5>서점 전용공간</h5>
+					<p>
+						서점 전용공간 설명 문안입니다.
+					</p>
+				</div>
+				<span class="more">
+					<span>바로가기</span>
+					<img src="./include/img/more.png" alt="">
+				</span>
+			</a>
+		</article>
+		<article class="place2">
+			<a href="#">
+				<div class="txtBox">
+					<h5>출판사 전용공간</h5>
+					<p>
+						출판사 전용공간 설명 문안입니다.
+					</p>
+				</div>
+				<span class="more">
+					<span>바로가기</span>
+					<img src="./include/img/more.png" alt="">
+				</span>
+			</a>
+		</article>
+	</div>
 </section>
 
 <section class="board">
