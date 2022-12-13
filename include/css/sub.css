@@ -341,7 +341,7 @@
 
 .boardSec .listBox ul.boardUl{
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	flex-wrap: wrap;
 }
 
@@ -351,7 +351,12 @@
 
 .boardSec .listBox.doThumb ul li{
 	width: 30%;
+	margin-right: 5%;
 	margin-top: 30px;
+}
+
+.boardSec .listBox.doThumb ul li:nth-child(3n){
+	margin-right: 0;
 }
 
 .boardSec .listBox.doThumb ul li:nth-child(-n+3){
@@ -361,6 +366,11 @@
 .boardSec .listBox.doThumb ul li .imgBox{
 	border: 1px solid #ccc;
 	width: 100%;
+	padding: 33% 0;
+	/* height: 245px; */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .boardSec .listBox ul.boardUl li .imgBox{
@@ -460,6 +470,10 @@
 
 .boardSec .listBox.doList ul li a .imgBox{
 	width: 200px;
+	padding: 6% 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .history_list .boardSec .listBox.doList ul li a .imgBox{
@@ -1035,6 +1049,7 @@
 .boardSec .listBox.doThumb ul li{
 	width: 90%;
 	margin-top: 5vw !important;
+	margin-right: 0;
 }
 
 .boardSec .listBox.doThumb ul li:nth-child(1){
@@ -1055,6 +1070,7 @@
 
 .boardSec .listBox.doList ul li a .imgBox{
 	width: 30%;
+	padding: 10% 0;
 }
 
 .boardSec .listBox.doList ul li a .txtBox{

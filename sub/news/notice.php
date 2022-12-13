@@ -49,14 +49,14 @@
 				<!-- 리스트 -->
 				<form action="">
 					<ul class="boardUl">
-						<? for($i=1; $i<=9;$i++){ ?>
+						<? for($i=1; $i<=8;$i++){ ?>
 						<li>
 							<a href="./sub.php?cate=news&page=notice_view">
 								<div class="chkBox">
 									<input type="checkbox" name="">
 								</div>
-								<div class="imgBox">
-									<img src="./include/img/news/newsThumb.png" alt="">
+								<div class="imgBox" style="background-image: url(./include/img/news/newsThumb.png)">
+									<!-- <img src="./include/img/news/newsThumb.png" alt=""> -->
 								</div>
 								<div class="txtBox">
 									<h5>
