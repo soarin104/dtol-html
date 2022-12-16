@@ -46,28 +46,6 @@
 		</div>
 		<div class="cover">
 			<p>
-				1961
-			</p>
-		</div>
-	</article>
-
-	<article class="visualCon">
-		<div class="txtBox">
-			<h2>
-				<span>Korea Publishers Cooperative</span>
-				조합소개
-			</h2>
-			<p>
-				지속성장을 추구하는 기업<br>
-				고객 여러분과 문화를 만들어 갑니다.
-			</p>
-			<a href="./sub.php?cate=info&page=infoMain">
-				<span>자세히보기</span>
-				<img src="./include/img/visualMore.png" alt="">
-			</a>
-		</div>
-		<div class="cover">
-			<p>
 				1967
 			</p>
 		</div>

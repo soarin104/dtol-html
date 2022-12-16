@@ -27,7 +27,7 @@
 }
 
 .visualCon{
-	width: 80px;
+	width: 90px;
 	height: 500px;
 	position: relative;
 	transition: all 1s;
@@ -35,8 +35,8 @@
 }
 
 .visualCon.on{
-	width: calc(100% - 320px);
-	border-right: 0;
+	width: calc(100% - 270px);
+	/* border-right: 0; */
 }
 
 .visualCon:last-child{
@@ -47,19 +47,19 @@
 	background: url(../img/visual1.png) no-repeat center / cover;
 }
 
-.visualCon:nth-child(2){
+/* .visualCon:nth-child(2){
 	background: url(../img/visual2.png) no-repeat center / cover;
-}
+} */
 
-.visualCon:nth-child(3){
+.visualCon:nth-child(2){
 	background: url(../img/visual3.png) no-repeat center / cover;
 }
 
-.visualCon:nth-child(4){
+.visualCon:nth-child(3){
 	background: url(../img/visual4.png) no-repeat center / cover;
 }
 
-.visualCon:nth-child(5){
+.visualCon:nth-child(4){
 	background: url(../img/visual5.png) no-repeat center / cover;
 }
 
@@ -119,6 +119,7 @@
 	height: 100%;
 	background: rgba(0,0,0,0.7);
 	cursor: pointer;
+	/* border-left: 1px solid #fff; */
 }
 
 .visualCon.on .cover{
