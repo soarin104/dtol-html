@@ -316,28 +316,33 @@
 }
 
 .ceoHi article{
-	background: url(../img/info/ceoBg.png) no-repeat center bottom / cover;
-	padding: 100px 0 150px;
+	/* background: url(../img/info/ceoBg.png) no-repeat center bottom / cover; */
+	padding: 20px 0 150px;
 }
 
 .ceoHi article .inner{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .ceoHi article .inner .imgBox{
-	width: 20%;
-	max-width: 250px;
+	width: 30%;
+	/* max-width: 260px; */
 }
 
 .ceoHi article .inner .txtBox{
-	width: 75%
+	width: 65%;
+	background: #e7f0f5;
+	box-sizing: border-box;
+	border-radius: 100px;
+	padding: 7%;
 }
 
 .ceoHi article .inner .txtBox h5{
-	color: #fff;
-	font-size: 20px;
-	margin-bottom: 30px;
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 10px;
 }
 
 .ceoHi article .inner .txtBox h5 span{
@@ -345,13 +350,13 @@
 }
 
 .ceoHi article .inner .txtBox h5 strong{
-	font-size: 1.4em;
+	font-size: 1em;
 }
 
 .ceoHi article .inner .txtBox p{
-	color: #fff;
-	font-size: 16px;
-	line-height: 2.5;
+	color: #666;
+	font-size: 15px;
+	line-height: 2;
 	font-weight: 300;
 }
 
@@ -364,11 +369,12 @@
 
 .ceoHi article .inner .txtBox .thanks span{
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .ceoHi article .inner .txtBox .thanks img{
-	margin-left: 30px;
+	margin-left: 15px;
+	width: 70px;
 }
 
 /* 임원소개 */
@@ -1436,8 +1442,8 @@
 
 /* 이사장 인사말 */
 .ceoHi article {
-    background: url(../img/info/ceoBg_m.png) no-repeat center bottom / cover;
-    padding: 10vw 0 15vw;
+    /* background: url(../img/info/ceoBg_m.png) no-repeat center bottom / cover; */
+    padding: 3vw 0 15vw;
 }
 
 .ceoHi article .inner{
@@ -1447,6 +1453,7 @@
 
 .ceoHi article .inner .txtBox{
 	width: 100%;
+	border-radius: 10vw;
 }
 
 .ceoHi article .inner .txtBox h5{
@@ -1473,7 +1480,7 @@
 }
 
 .ceoHi article .inner .txtBox .thanks img{
-	width: 20vw;
+	width: 15vw;
 	margin-left: 5vw;
 }
 
