@@ -564,11 +564,15 @@
 }
 
 .visualCon:nth-child(1){
-	background: url(../img/visual1_m.png) no-repeat center / cover;
+	background: url(../img/visual5_m.png) no-repeat center / cover;
 }
 
-.visualCon:nth-child(2){
+/* .visualCon:nth-child(2){
 	background: url(../img/visual2_m.png) no-repeat center / cover;
+} */
+
+.visualCon:nth-child(2){
+	background: url(../img/visual4_m.png) no-repeat center / cover;
 }
 
 .visualCon:nth-child(3){
@@ -576,11 +580,7 @@
 }
 
 .visualCon:nth-child(4){
-	background: url(../img/visual4_m.png) no-repeat center / cover;
-}
-
-.visualCon:nth-child(5){
-	background: url(../img/visual5_m.png) no-repeat center / cover;
+	background: url(../img/visual1_m.png) no-repeat center / cover;
 }
 
 /* info */

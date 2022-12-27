@@ -521,6 +521,83 @@
 	margin: 5vw auto 0;
 }
 
+/* 물류 배송 */
+.work6 .subVisual{
+	margin-bottom: 10vw;
+}
+
+.work6 .callBtn{
+	width: 80%;
+	margin: 20px auto 0 !important;
+}
+
+.work6 .herb{
+	/* padding: 10vw 0 !important; */
+}
+
+.work6 .herb .imgBox{
+	position: relative;
+	top: auto;
+	left: auto;
+}
+
+.work6 .herb .imgBox img{
+	width: 100%;
+}
+
+.work6 .herb .txtBox .top{
+	padding-bottom: 5vw;
+}
+
+.work6 .herb .txtBox .top .inner{
+	margin: 5vw auto 0 !important;
+	width: 90%;
+}
+
+.work6 .tit{
+	font-size: 5vw;
+	margin-bottom: 5vw;
+}
+
+.work6 .tit .where{
+	font-size: 3.5vw;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.work6 .tit .conTxt{
+	font-size: 3.5vw;
+}
+
+.work6 .herb .txtBox .top ul li{
+	margin-bottom: 5px;
+}
+
+.work6 .herb .txtBox .top ul li h5{
+	font-size: 4vw;
+}
+
+.work6 .herb .txtBox .bottom{
+	padding: 5vw 0;
+}
+
+.work6 .herb .txtBox .bottom .inner{
+	width: 90%;
+	margin-left: 0;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.work6 .herb .txtBox .bottom .inner > h5{
+	width: 100%;
+	font-size: 4vw;
+}
+
+.work6 .herb .txtBox .bottom .inner p{
+	width: 100%;
+	font-size: 3.5vw;
+}
+
 
 
 
